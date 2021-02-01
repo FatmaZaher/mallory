@@ -1,0 +1,673 @@
+body{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+
+}
+.clearfix{
+    clear: both;
+}
+.logo{
+    font-size: 43px;
+    color: #000;
+    font-family: 'Mr Dafoe', cursive;  
+}
+h3{
+    margin: 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+p{
+    color: #34495e;
+    margin: 0;
+    font-size: 14px;
+    margin-top: 30px;
+}
+button{
+    padding: 10px;
+    font-size: 10px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: linear .3s;
+}
+button:hover{
+    color: #fff;
+    background-color: #34495e;
+}
+ul{
+    list-style: none;
+    opacity: 0;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #95a5a6;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    transition: linear .3s;
+}
+ul li:hover{
+    color: #34495e;
+    transform: scale(1.2);
+}
+ul li:hover a{
+    color: #34495e;
+}
+
+/* start navbar*/
+.nav{
+    position: relative;
+    height: 65px;
+    padding-top: 10px;
+}
+.nav .back{
+    width: 50%;
+    background-color: #e89d45;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+.nav .navbar{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+}
+.navbar .logo{
+    float: left;   
+    position: relative;
+    line-height: 65px;
+}
+.navbar .menu{
+   font-weight: bold;
+   position: relative;
+}
+.navbar .menu ul{
+    float: right;
+    line-height: 65px;
+    margin: 0;
+}
+.navbar .menu .bars{
+    float: right;
+    line-height: 65px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+
+}
+.navbar .menu .bars:hover{
+    color: #34495e;
+    transform: scale(1.08);
+}
+
+/* end navbar */
+/*start shop*/
+.shop{
+    width: 100%;
+    position: relative;
+}
+.shop .back{
+    height: 430px;
+    width: 50%;
+    background-color: #e89d45;  
+}
+.shop .image-back{
+    width: 44%;
+    height: 74%;
+    background-color: transparent;
+    border: 2px solid #34495e;
+    position: absolute;
+    top: 8%;
+    left: 21%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.shop .image-back .shop-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/shop.jpg);
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.shop .shop-info{
+    width: 250px;
+    padding: 30px;
+    background-color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 45%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    letter-spacing: .8px;
+}
+.shop .shop-info h2{
+    margin: 0;
+    line-height: 38.5px;
+}
+/*end shop*/
+/*start blog*/
+.blog{
+    padding: 80px 0;
+}
+.blog .title{
+    text-align: center;
+    margin-bottom: 30px;
+} 
+.blog .blog-in{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    opacity: 0;
+    text-align: center;
+}
+.blog .blog-in .recipe{
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+    transition: linear .3s;
+}
+.blog .blog-in .recipe:hover{
+    transform: scale(1.06);
+}
+.blog .blog-in > div:nth-of-type(3){
+    margin-right: 0;
+}
+.blog .blog-in .recipe .image{
+    width: 264px;
+    height: 264px;
+    background-size: cover;
+    background-position: center;  
+}
+.blog .blog-in > div:first-of-type .image{
+    background-image: url(../images/blog3.jpg);
+}
+.blog .blog-in > div:nth-of-type(2) .image{
+    background-image: url(../images/blog2.jpg);
+}
+.blog .blog-in > div:nth-of-type(3) .image{
+    background-image: url(../images/blog1.jpg);
+}
+.blog .blog-in .recipe .recipe-info h4{
+    color: #34495e;
+    margin: 10px 0 4px 0;
+}
+.blog .blog-in .recipe:hover .recipe-info h4{
+    color: #000;   
+}
+.blog .blog-in .recipe .recipe-info p{
+    margin-top: 0;
+    opacity: 1;
+}
+/*end blog*/
+/*start about*/
+.about{
+    width: 100%;
+    height: 625px;
+    position: relative;
+}
+.about .back{
+    width: 60%;
+    background-color: #f8cdc4;
+    position: absolute;
+}
+.about .about-in{
+    position: relative;
+    width: 100%;
+}
+.about .about-in .about-info{
+    width: 50%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    padding: 98px 50px;
+    box-sizing: border-box;
+}
+.about .about-in .about-info h3{
+    margin: 20px 0;
+}
+.about .about-in .about-info .logo{
+    margin-top: 40px;
+    margin-bottom: 40px; 
+}
+.about .about-in .about-info p{
+    margin-bottom: 40px;
+    margin-top: 60px !important;
+}
+.about .about-in .about-img{
+    height: 100%;
+    position: relative;
+    float: left;
+    width: 50%;
+    padding: 73px 50px;
+    box-sizing: border-box;
+}
+.about .about-in .about-img .image-back{
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid #34495e;
+    opacity: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;   
+    position: relative; 
+    overflow: hidden;
+}
+.about .about-in .about-img .image-back .about-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/about.jpg);
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}  
+.about .about-in .about-me{
+    width: 170px;
+    text-align: center;
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #fff;
+    transform: rotate(90deg);
+    top: 44%;
+    left: 67%;
+}
+/*end about*/
+/* start blog1*/
+.blog1 .blog-in > div:nth-of-type(3) .image{
+    background-image: url(../images/green.jpg);
+}
+.blog1 .blog-in > div:nth-of-type(2) .image{
+    background-image: url(../images/blog1.jpg);
+}
+.blog1 .blog-in > div:nth-of-type(1) .image{
+    background-image: url(../images/blog2.jpg);
+}
+.blog1 button{
+    margin: auto; 
+    margin-top: 30px;
+}
+/* end blog1*/
+/*start contact*/
+.contact{
+    height: 550px;
+    position: relative;
+}
+.contact .back{
+    height: 430px;
+    width: 100%;
+    background-color: #d3e09a;
+    position: absolute;
+    top: 50%;
+    margin-top: -215px;
+    z-index: -1;
+}
+.contact .contact-in {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.contact .contact-in .contact-left{
+    float: left;
+    width: 45%;
+    height: 550px;
+    position: relative;
+}
+.contact .contact-in .contact-left .contact-back{
+    width: 90%;
+    height: 100%;
+    float: right;
+    background-color: transparent;
+    border: 2px solid #34495e;
+    padding: 20px;
+    box-sizing: border-box; 
+    position: relative; 
+    opacity: 0;
+    margin-top: 50px;
+}
+.contact .contact-in .contact-back .contact-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/contact.jpg);
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact .contact-in .contact-info{
+    text-align: center;
+    padding: 200px 80px 150px 80px;
+    float: right;
+    width: 55%;
+    box-sizing: border-box;
+}
+.contact .contact-in .contact-info h3,
+.contact .contact-in .contact-info p{
+    margin-bottom: 30px;
+}
+.contact .contact-in .contact-left .work-with-me{
+    width: 210px;
+    text-align: center;
+    position: absolute;
+    padding: 10px 30px;
+    background-color: #d3e09a;
+    transform: rotate(-90deg);
+    top: 270px;
+    left: -90px;
+}
+.contact .contact-in .contact-left .work-with-me h3{
+    margin-top: 0;
+}
+    
+/*end contact*/
+/*start sign up*/
+.sign-up{
+    padding: 100px 0;
+}
+.sign-up .sign-up-info{
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f3f4;
+}
+.sign-up .sign-up-info h3{
+    margin-bottom: 30px;
+}
+.sign-up .sign-up-info form{
+    opacity: 0;
+    margin-top: 30px;
+}
+.sign-up .sign-up-info form input{
+    padding: 10px 15px;
+    color: #f5f3f4;
+    cursor: pointer;
+    font-size: 12px;
+    margin: 30px 0;
+}
+.sign-up .sign-up-info form input:first-of-type{
+    background-color: #fff;
+    border: 1px solid #95a5a6;
+}
+.sign-up .sign-up-info form input:last-of-type{
+    background-color:#000;
+    border: none;
+    text-transform: uppercase;
+}
+.sign-up .sign-up-info form input:last-of-type:hover{
+    color: #fff;
+    background-color: #34495e;
+}
+/*end sign up*/
+/*start let be friends*/
+.friends{
+    position: relative;
+}
+.friends .back{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background-color: #fdec9e;
+    top: 160px;
+}
+.friends .let-be-friends{
+    position: relative;
+    text-align: center;
+}
+.friends .let-be-friends .be-friends{
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    margin-top: 30px;
+}
+.friends .let-be-friends .be-friends .friend{
+    width: calc(94%/4);
+    height: 190px;
+    background-image: url(../images/contact\ 3.jpg);
+    background-origin: content-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+.friends .let-be-friends .be-friends > div:nth-of-type(4){
+    margin-right: 0;
+}
+/*end let be friends*/
+/*start footer*/
+.footer{
+    height: 180px;
+    background-color: #f8cdc4;
+    padding: 83px;
+    text-align: center;
+}
+.footer .logo{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.footer .foote ul li a{
+    color: #34495e;
+}
+.footer .foote .fa{
+    margin: 20px 0;
+    opacity: 0;
+    margin-top: 30px;
+}
+.footer .foote .fa a{
+    display: inline-block;
+    text-decoration: none;
+    color: #95a5a6;
+    font-size: 15px;
+    cursor: pointer;
+    transition: linear .3s;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #000;
+    border-radius: 50%;
+}
+.footer .foote .fa a:hover{
+    background-color: #95a5a6;
+    color: #000;
+}
+/*end footer*/
+@media screen and (max-width: 991px){
+    .navbar .menu .bars{
+        display: block;    
+    }
+    .logo{
+        font-size: 35px;
+    }
+    .nav .back{
+        width: 100%;
+    }
+    .shop .back{
+        height: 100%;
+        width: 100%;
+    }
+    .shop{
+        width: 100%;
+    }
+    .shop .image-back{
+        width: 84%;
+        left: 8%;
+    }
+    .shop .shop-info{
+        margin-left: -22%;
+        width: 45%;
+    }
+    .navbar .menu ul{
+        position: relative;
+        width: 100%;
+        height: calc(100vh - 65px);
+        top: 0;
+        left: 0;
+        margin: 0;
+        align-items: center;
+        background-color:rgba(232, 157, 69, 0.85);
+        transition: .5s;
+        z-index: 100;
+        font-weight: bold;
+        max-height: 0;
+        overflow: hidden;
+        
+      }
+      .navbar .menu ul.open {
+        max-height: 100vh;
+        overflow: visible;
+        transition: 1s;
+        padding: 0;
+      }
+      .navbar .menu ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+        opacity: 0;
+      }
+      .navbar .menu ul li:first-of-type{
+          margin-top: 120px;
+      }
+      .navbar .menu ul li:hover{
+        color: #34495e;
+        transform: scale(1.2);
+    }
+    .navbar .menu ul li a{
+        color: #252424;
+    }
+    .blog .blog-in .recipe{
+        width: auto;
+        margin-right: 0;
+        float: none;
+        overflow: hidden;
+        margin: auto;
+        text-align: center;
+    }
+    .blog .blog-in .recipe .image{
+        margin: auto;
+    }
+    .blog .blog-in .recipe .recipe-info{
+        margin-bottom: 20px;
+    }
+    .about .back{
+        width: 100%;
+        height: 100%;
+    }
+    .about .about-in .about-info{
+        float: none;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        margin: 0;
+        background-color: rgba(248, 205, 196 , 0.54);
+        height: calc(100% - 200px);
+        width: calc(100% - 40px); 
+        padding: 21px;
+    }
+    .about .about-in .about-img{
+        width: 100%;
+        height: 100%;
+        padding: 80px 0;
+    }
+    .about .about-in .about-img .image-back{
+        width: 100%;
+    }
+    .about .about-in .about-img .about-me{
+        display: none;
+    }
+    .contact .contact-in .contact-left{
+        float: none;
+        width: 100%;
+        height: 550px;
+        position: relative;
+    }
+    .contact .contact-in .contact-left .contact-back{
+        width: 100%;
+        float: none;  
+    }
+    .contact .contact-in .contact-left .work-with-me{
+        display: none;
+    }
+    .contact .contact-in .contact-info{
+        float: none;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        z-index: 100;
+        margin: 0;
+        background-color: rgba(201, 222, 108 , 0.53);
+        height: calc(100% - 40px);
+        width: calc(100% - 40px); 
+    }
+    .friends .let-be-friends .be-friends .friend{
+        width: calc(94%/2);
+    }
+}
+
+
+
+@media (max-width: 767px){   
+    .about .about-in .about-info p {
+        margin-bottom: 20px;
+        margin-top: 20px !important;
+    }
+    .contact .contact-in .contact-info{
+        padding: 190px 20px 150px;
+    }
+    .footer .foote ul {
+        padding: 0;
+    }
+    .footer .foote ul li{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .footer{
+        height: 271px;
+        margin-top: 50px;
+        padding: 37px;
+    }
+    .shop .shop-info{
+        top: 24%;
+        left: 41%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    
+    
+}
+@media (min-width: 992px){
+    
+
+
+}
+
+@media (min-width: 1200px){
+   
+    
+}
